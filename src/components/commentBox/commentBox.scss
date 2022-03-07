@@ -1,25 +1,22 @@
-.container {
+.comment-box {
   display: flex;
   align-items: center;
+  gap: 2rem;
   border-radius: 10px;
   background-color: var(--white);
-  padding-bottom: 20px;
-  max-width: 800px;
+  padding: 1rem;
   min-width: 300px;
-  margin-bottom: 1rem;
   .reply-text {
     margin-left: 8px;
   }
   @media (max-width: 470px) {
     flex-direction: column-reverse;
     align-items: flex-start;
-    max-width: 90%;
   }
 
   .vote-button-container {
     display: flex;
     justify-content: center;
-    padding-left: 20px;
     @media (max-width: 470px) {
       padding-right: 25px;
       width: 100%;
@@ -28,24 +25,18 @@
     }
   }
 
-  .comment-box {
-    padding: 25px;
-    border-radius: 10px;
-    flex: 10;
-
+  .comment-container {
     .comment-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 15px;
 
       .left {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 1rem;
         .avatar-image {
           height: 40px;
-          margin-left: 5px;
         }
         .username {
           font-weight: 500;

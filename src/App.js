@@ -1,9 +1,10 @@
+import Layout from "./components/layout/Laoyout";
 import CommentBox from "./components/commentBox/CommentBox";
 function App() {
   return (
-    <div className="app">
+    <Layout>
       <CommentBox />
-    </div>
+    </Layout>
   );
 }
 

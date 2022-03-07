@@ -1,0 +1,20 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--very-light-gray);
+
+  @media (max-width: 375px) {
+  }
+}
+.container {
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--very-light-gray);
+  width: var(--desktop);
+  @media (max-width: 375px) {
+    padding-top: 1.8rem;
+  }
+}
