@@ -1,7 +1,5 @@
 import "./commentBox.scss";
-import data from "../../data";
 import VoteButton from "../voteButton/VoteButton";
-
 export const ReplyButton = () => {
   return (
     <>
@@ -11,12 +9,11 @@ export const ReplyButton = () => {
   );
 };
 
-export default function CommentBox() {
-  let comment = data.comments[0];
+export default function CommentBox({ comment }) {
   return (
     <div className="comment-box">
       <div className="vote-button-container">
-        <VoteButton />
+        <VoteButton score={comment?.score} />
       </div>
       <div className="comment-container">
         <div className="comment-header">

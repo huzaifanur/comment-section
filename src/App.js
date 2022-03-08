@@ -1,9 +1,9 @@
 import Layout from "./components/layout/Laoyout";
-import CommentBox from "./components/commentBox/CommentBox";
+import CommentPage from "./components/pages/commentPage/CommentPage";
 function App() {
   return (
     <Layout>
-      <CommentBox />
+      <CommentPage />
     </Layout>
   );
 }

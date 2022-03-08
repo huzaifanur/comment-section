@@ -1,0 +1,27 @@
+.reply-container {
+  display: flex;
+  box-sizing: border-box;
+  .vertical-rule {
+    flex-basis: 12%;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 470px) {
+      display: none;
+    }
+
+    .vertical-rule-inner {
+      width: 0px;
+      background-color: white;
+      border-right: 2px solid var(--light-gray);
+      height: 100%;
+      color: white;
+    }
+  }
+  .reply-area {
+    flex-basis: 88%;
+    @media (max-width: 470px) {
+      flex-basis: 100%;
+    }
+  }
+}
